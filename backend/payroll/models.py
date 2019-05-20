@@ -15,6 +15,8 @@ class SalarySlip(models.Model):
     )
 
     class Meta:
+        verbose_name = 'Salary Slip'
+        verbose_name_plural = 'Salary Slips'
         ordering = ['employee_name']
 
     def __str__(self):
