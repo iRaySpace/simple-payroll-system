@@ -20,4 +20,4 @@ class SalarySlip(models.Model):
         ordering = ['employee_name']
 
     def __str__(self):
-        return 'SalarySlip/{0}/{1}'.format(self.employee_name, self.id)
+        return '{0}/{1}'.format(self.id, self.employee_name)
